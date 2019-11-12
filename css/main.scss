@@ -1,5 +1,5 @@
 $primary-color: #191A1E;
-$secondary-color: #f7f7f7; 
+$secondary-color: #F2F3F4; 
 $tertiary-color: #727275; 
 $box-shadow: 0px 10px 40px rgba(25, 30, 28, 0.6); 
 
@@ -16,6 +16,10 @@ body{
 *{
     box-sizing: border-box;
     font-family: 'Poppins';
+}
+
+.link {
+    text-decoration: none;
 }
 
 .btn{
@@ -39,8 +43,42 @@ body{
     }
 }
 
+.technology{
+    color: $tertiary-color;
+    border: 1px solid $tertiary-color;
+    padding: 5px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 15px;
+    transition: .3s;
+    margin: 5px 3px;
+
+    &:hover {
+        background: $tertiary-color;
+        color: #f7f7f7;
+    }
+}
+
+.text--grey{
+    color: #727275
+}
+
 .container{
     padding: 0 20vw;
+}
+
+.icon{
+    text-decoration: none;
+    border-radius: 50px;
+    transition: .3s;
+
+    &:hover{
+        box-shadow: $box-shadow;
+    }
+}
+
+.sectionTitle{
+    font-size: 60px;
 }
 
 .header{
@@ -68,10 +106,7 @@ body{
         color: $tertiary-color;
         text-transform: uppercase;
         letter-spacing: 2px;
-    }
-
-    &__title{
-        font-size: 40px;
+        font-size: 20px;
     }
 
     &__links{
@@ -80,10 +115,62 @@ body{
         right: 9vw;
     }
 
-    &__link{
+    &__icon{
         display: block;
         width: 50px;
         margin: 15px 0;
+    }
+}
+
+.portfolio{
+    padding: 9vw 0 0 20vw;
+
+    &__title{
+        margin-bottom: 9vw;
+    }
+
+    &__row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 100px;
+    }
+
+    &__project{
+        margin-bottom: 20vw;
+    }
+
+    &__left{
+        grid-column: span 5 / auto;
+    }
+
+    &__right{
+        margin-top: 3vw;
+        grid-column: span 7 / auto;
+    }
+
+    &__projectTitle {
+        font-size: 40px;
+    }
+
+    &__projectDescription {
+        font-size: 20px;
+        line-height: 36px;
+        color: $tertiary-color;
+    }
+
+    &__link:focus{
+        outline: none;
+    }
+
+    &__link:focus &__icon{
+        box-shadow: $box-shadow;
+    }
+
+    &__icon{
+        display: inline-block;
+        width: 60px;
+        margin: 15px 15px 30px 0;
         border-radius: 50px;
         transition: .3s;
 
