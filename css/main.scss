@@ -179,3 +179,29 @@ body{
         }
     }
 }
+
+.contact{
+    padding: 0 0 0 20vw;
+    margin-bottom: 9vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+
+    &__title{
+        
+    }
+
+    &__mockup{
+        background-image: url('../gallery/phone.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: .5s;
+        position: relative;
+        top: 0px;
+
+        &:hover{
+            position: relative;
+            top: -50px;
+        }
+    }
+}

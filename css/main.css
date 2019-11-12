@@ -193,4 +193,29 @@ body {
   -webkit-box-shadow: 0px 10px 40px rgba(25, 30, 28, 0.6);
           box-shadow: 0px 10px 40px rgba(25, 30, 28, 0.6);
 }
+
+.contact {
+  padding: 0 0 0 20vw;
+  margin-bottom: 9vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+}
+
+.contact__mockup {
+  background-image: url("../gallery/phone.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+  top: 0px;
+}
+
+.contact__mockup:hover {
+  position: relative;
+  top: -50px;
+}
 /*# sourceMappingURL=main.css.map */
