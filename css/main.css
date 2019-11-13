@@ -30,10 +30,10 @@ body {
   color: #F2F3F4;
   padding: 12px 50px;
   font-size: 18px;
-  font-weight: bolder;
-  letter-spacing: 2px;
+  border-radius: 50px;
   -webkit-transition: .3s;
   transition: .3s;
+  letter-spacing: 1px;
 }
 
 .btn:focus {
@@ -44,6 +44,7 @@ body {
 
 .btn:hover {
   background: #F2F3F4;
+  font-weight: bolder;
   color: #191A1E;
 }
 
@@ -89,7 +90,7 @@ body {
 }
 
 .sectionTitle {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .header {
@@ -223,6 +224,10 @@ body {
 .contact__right:hover {
   position: relative;
   top: -50px;
+}
+
+.contact__btn {
+  text-decoration: none;
 }
 
 .about {
