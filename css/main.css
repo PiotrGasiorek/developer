@@ -329,7 +329,8 @@ body {
     height: calc(80vh - 2vw - 20px);
   }
   .header__btn {
-    width: 100%;
+    display: block;
+    text-align: center;
   }
   .header .container {
     padding: 0 9vw;
