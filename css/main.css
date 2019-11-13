@@ -142,6 +142,7 @@ body {
 }
 
 .portfolio {
+  width: 100%;
   padding: 9vw 0 0 20vw;
 }
 
@@ -209,7 +210,7 @@ body {
   grid-gap: 100px;
 }
 
-.contact__mockup {
+.contact__right {
   background-image: url("../gallery/phone.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -219,7 +220,7 @@ body {
   top: 0px;
 }
 
-.contact__mockup:hover {
+.contact__right:hover {
   position: relative;
   top: -50px;
 }
@@ -241,5 +242,106 @@ body {
   text-align: center;
   font-size: 20px;
   margin: 4rem 0 3rem 0;
+}
+
+@media only screen and (max-width: 1387px) {
+  .sectionTitle {
+    font-size: 40px;
+  }
+  .header__smallTitle {
+    font-size: 17px;
+  }
+  .portfolio__row {
+    display: block;
+  }
+  .portfolio__left {
+    max-width: 410px;
+    margin-bottom: 5rem;
+  }
+  .portfolio__projectTitle {
+    font-size: 30px;
+  }
+  .portfolio__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .portfolio__right img {
+    margin-left: auto;
+  }
+  .about__description {
+    font-size: 20px;
+    line-height: calc(20 * 1.6px);
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .sectionTitle {
+    font-size: 30px;
+  }
+  .header__smallTitle {
+    font-size: 15px;
+  }
+  .header__mainContent {
+    text-align: left;
+  }
+  .portfolio__title {
+    margin-bottom: 5rem;
+  }
+  .portfolio__projectTitle {
+    font-size: 26px;
+    margin: 5px 0;
+  }
+  .portfolio__projectDescription {
+    font-size: 18px;
+    line-height: calc(18 * 1.6px);
+  }
+  .contact {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .contact__left, .contact__right {
+    grid-column: span 2 / auto;
+  }
+  .contact__right {
+    height: 40vh;
+  }
+  .about__description {
+    font-size: 18px;
+    line-height: calc(18 * 1.6px);
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .header__mainContent {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: calc(80vh - 2vw - 20px);
+  }
+  .header__btn {
+    width: 100%;
+  }
+  .header .container {
+    padding: 0 9vw;
+  }
+  .header__icon {
+    display: inline-block;
+    width: 60px;
+    margin-right: 10px;
+  }
+  .header__links {
+    display: none;
+    left: 9vw;
+  }
+  .portfolio {
+    padding: 9vw 0 0 9vw;
+  }
+  .contact {
+    padding: 9vw 0 0 9vw;
+  }
+  .about {
+    padding: 9vw 0 0 9vw;
+  }
 }
 /*# sourceMappingURL=main.css.map */

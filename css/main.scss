@@ -143,6 +143,7 @@ body{
 // *************** Section portfolio ***************
 
 .portfolio{
+    width: 100%;
     padding: 9vw 0 0 20vw;
 
     &__title{
@@ -204,7 +205,7 @@ body{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 100px;
 
-    &__mockup{
+    &__right{
         background-image: url('../gallery/phone.png');
         background-size: contain;
         background-repeat: no-repeat;
@@ -243,3 +244,130 @@ body{
 }
 
 // *************** Media queries ***************
+
+@media only screen and (max-width: 1387px) {
+    .sectionTitle{
+        font-size: 40px;
+    }
+
+    .header{
+        &__smallTitle{
+            font-size: 17px;
+        }
+    }
+
+    .portfolio{
+
+        &__row{
+            display: block;
+        }
+
+        &__left{
+            max-width: 410px;
+            margin-bottom: 5rem;
+        }
+
+        &__projectTitle{
+            font-size: 30px;
+        }
+
+        &__right{
+            display: flex;
+            img{
+                margin-left: auto;
+            }
+        }
+    }
+    .about__description{
+        font-size: 20px;
+        line-height: calc(20 * 1.6px);
+    }
+}
+@media only screen and (max-width: 950px) {
+    .sectionTitle{
+        font-size: 30px;
+    }
+
+    .header{
+        &__smallTitle{
+            font-size: 15px;
+        }
+
+        &__mainContent{
+            text-align: left;
+        }
+    }
+
+    .portfolio{
+        &__title{
+            margin-bottom: 5rem;
+        }
+
+        &__projectTitle{
+            font-size: 26px;
+            margin: 5px 0;
+        }
+
+        &__projectDescription{
+            font-size: 18px;
+            line-height: calc(18 * 1.6px);
+        }
+    }
+
+    .contact{
+        grid-template-columns: repeat(2, 1fr);
+
+        &__left, &__right{
+            grid-column: span 2 / auto;
+        }
+
+        &__right{
+            height: 40vh;
+        }
+    }
+
+    .about__description{
+        font-size: 18px;
+        line-height: calc(18 * 1.6px);
+    }
+}
+@media only screen and (max-width: 410px) {
+
+    .header{
+        &__mainContent{
+            align-items:flex-end;
+            height: calc(80vh - 2vw - 20px);
+        }
+
+        &__btn{
+            width: 100%;
+        }
+
+        .container{
+            padding: 0 9vw;
+        }
+
+        &__icon{
+            display: inline-block;
+            width: 60px;
+            margin-right: 10px;
+        }
+
+        &__links{
+            display: none;
+            left: 9vw;
+        }
+    }
+
+    .portfolio{
+        padding: 9vw 0 0 9vw;
+    }
+
+    .contact{
+        padding: 9vw 0 0 9vw;
+    }
+
+    .about{
+        padding: 9vw 0 0 9vw;
+    }
+}
