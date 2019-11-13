@@ -22,6 +22,12 @@ body{
     text-decoration: none;
 }
 
+.description{
+    font-size: 20px;
+    line-height: 36px;
+    color: $tertiary-color;
+}
+
 .btn{
     background: $primary-color;
     border: 3px solid $primary-color;
@@ -61,6 +67,10 @@ body{
 
 .text--grey{
     color: #727275
+}
+
+.text--bold{
+    font-weight: bolder;
 }
 
 .container{
@@ -153,12 +163,6 @@ body{
         font-size: 40px;
     }
 
-    &__projectDescription {
-        font-size: 20px;
-        line-height: 36px;
-        color: $tertiary-color;
-    }
-
     &__link:focus{
         outline: none;
     }
@@ -187,10 +191,6 @@ body{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 100px;
 
-    &__title{
-        
-    }
-
     &__mockup{
         background-image: url('../gallery/phone.png');
         background-size: contain;
@@ -204,4 +204,23 @@ body{
             top: -50px;
         }
     }
+}
+
+.about{
+    padding: 9vw 20vw;
+
+    &__description{
+        font-size: 25px;
+        line-height: calc(25 * 1.6px);
+    }
+
+    &__technology{
+        margin-top: 1rem;
+    }
+}
+
+.footer{
+    text-align: center;
+    font-size: 20px;
+    margin: 4rem 0 3rem 0;
 }

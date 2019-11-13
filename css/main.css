@@ -18,6 +18,12 @@ body {
   text-decoration: none;
 }
 
+.description {
+  font-size: 20px;
+  line-height: 36px;
+  color: #727275;
+}
+
 .btn {
   background: #191A1E;
   border: 3px solid #191A1E;
@@ -60,6 +66,10 @@ body {
 
 .text--grey {
   color: #727275;
+}
+
+.text--bold {
+  font-weight: bolder;
 }
 
 .container {
@@ -165,12 +175,6 @@ body {
   font-size: 40px;
 }
 
-.portfolio__projectDescription {
-  font-size: 20px;
-  line-height: 36px;
-  color: #727275;
-}
-
 .portfolio__link:focus {
   outline: none;
 }
@@ -217,5 +221,24 @@ body {
 .contact__mockup:hover {
   position: relative;
   top: -50px;
+}
+
+.about {
+  padding: 9vw 20vw;
+}
+
+.about__description {
+  font-size: 25px;
+  line-height: calc(25 * 1.6px);
+}
+
+.about__technology {
+  margin-top: 1rem;
+}
+
+.footer {
+  text-align: center;
+  font-size: 20px;
+  margin: 4rem 0 3rem 0;
 }
 /*# sourceMappingURL=main.css.map */
