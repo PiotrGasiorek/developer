@@ -5,6 +5,7 @@
     position: fixed;
     z-index: 1000;
     animation-name: screenAnimation;
+    animation-delay: 0.4s;
     animation-duration: 1s;
 }
 

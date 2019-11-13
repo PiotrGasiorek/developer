@@ -10,7 +10,7 @@ function slideEffect(){
     toggleButton('none');
     animationSlider.classList.add('loadingScreen');
     setTimeout(function(){
-        // Unblock button
+        // Unblock buttons
         toggleButton('');
         animationSlider.classList.remove('loadingScreen');
     }, 1400);
