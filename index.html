@@ -12,8 +12,11 @@
     <link rel="stylesheet" href="./css/main.css">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
+    <!-- Scroll animation -->
+    <script src='./scrollAnimation.js'></script>
 </head>
 <body>
+    <div class="animationSlider"></div>
     <header class="header">
         <nav class="header__nav">
             <img class='header__logo' src="./gallery/logo.svg" alt="logo Piotr Gąsiorek">
@@ -23,7 +26,7 @@
                 <div class="wrapper">
                     <h4 class="header__smallTitle">Frontend Developer</h4>
                     <h1 class="header__title sectionTitle">Ready for new experiences<br> and challenges</h1>
-                    <button class="header__btn btn">Portfolio</button>
+                    <a href='#portfolio' class="header__btn btn" onclick='slideEffect()'>Portfolio</a>
                 </div>
             </div>
         </div>
@@ -39,7 +42,7 @@
             </a>
         </div>
     </header>
-    <section class="portfolio">
+    <section id='portfolio' class="portfolio">
         <h2 class="portfolio__title sectionTitle">Some of <span class='text--grey'> my works</span><br> check these out</h2>
         <div class="portfolio__project">
             <div class="portfolio__row">
