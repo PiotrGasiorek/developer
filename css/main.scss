@@ -176,6 +176,10 @@ body{
         grid-column: span 7 / auto;
     }
 
+    &__img{
+        overflow: hidden;
+    }
+
     &__projectTitle {
         font-size: 40px;
     }
@@ -282,9 +286,10 @@ body{
 
         &__right{
             display: flex;
-            img{
-                margin-left: auto;
-            }
+        }
+
+        &__img{
+            margin-left: auto;
         }
     }
     .about__description{
