@@ -370,6 +370,9 @@ body {
   .portfolio {
     padding: 9vw 0 0 9vw;
   }
+  .portfolio__right {
+    margin-bottom: 200px;
+  }
   .contact {
     padding: 9vw 0 0 9vw;
   }
