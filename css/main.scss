@@ -355,7 +355,7 @@ body{
     .header{
         &__mainContent{
             align-items:flex-end;
-            height: calc(80vh - 2vw - 80px);
+            height: calc(80vh - 100px);
         }
 
         &__btn{
