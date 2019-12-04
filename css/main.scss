@@ -8,7 +8,6 @@ $box-shadow: 0px 10px 40px rgba(25, 30, 28, 0.6);
 // *************** Deafult styles ***************
 
 html, body{
-    height: 100%;
     width: 100%;
 }
 
@@ -179,6 +178,7 @@ body{
         margin-left: auto;
         margin-top: 3vw;
         grid-column: span 7 / auto;
+        overflow: hidden;
     }
 
     &__projectTitle {
@@ -318,6 +318,10 @@ body{
             margin-bottom: 5rem;
         }
 
+        &__img{
+            width: 100%;
+        }
+
         &__projectTitle{
             font-size: 26px;
             margin: 5px 0;
@@ -346,7 +350,7 @@ body{
         line-height: calc(18 * 1.6px);
     }
 }
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 600px) {
 
     .header{
         &__mainContent{
@@ -382,10 +386,6 @@ body{
 
     .portfolio{
         padding: 9vw 0 0 9vw;
-
-        &__img{
-            width: 100%;
-        }
     }
 
     .contact{
