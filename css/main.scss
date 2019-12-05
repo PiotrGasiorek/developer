@@ -35,7 +35,7 @@ body{
 
 .btn{
     background: $primary-color;
-    border: 3px solid $primary-color;
+    border: 2px solid $primary-color;
     color: $secondary-color;
     padding: 12px 50px;
     font-size: 18px;
@@ -50,8 +50,9 @@ body{
 
     &:hover{
         background: $secondary-color;
-        font-weight: bolder;
         color: $primary-color;
+        border-color: $secondary-color;
+        font-weight: 500;
     }
 }
 
