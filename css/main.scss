@@ -154,7 +154,7 @@ body{
 
 .portfolio{
     width: 100%;
-    padding: 9vw 0 0 20vw;
+    padding: 9vw 9vw 0 9vw;
 
     &__title{
         margin-bottom: 9vw;
@@ -164,7 +164,7 @@ body{
         width: 100%;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-gap: 100px;
+        grid-gap: 0px;
     }
 
     &__project{
@@ -390,8 +390,6 @@ body{
     }
 
     .portfolio{
-        padding: 9vw 0 0 9vw;
-
         &__right{
             margin-bottom: 200px;
         }
