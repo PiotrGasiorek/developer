@@ -169,6 +169,7 @@ body {
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
   grid-gap: 0px;
+  min-height: 40vh;
 }
 
 .portfolio__project {
@@ -180,10 +181,10 @@ body {
 }
 
 .portfolio__right {
-  margin-left: auto;
+  height: auto;
   margin-top: 3vw;
   grid-column: span 7 / auto;
-  overflow: hidden;
+  width: 100%;
 }
 
 .portfolio__projectTitle {
@@ -272,23 +273,8 @@ body {
   .header__smallTitle {
     font-size: 17px;
   }
-  .portfolio__row {
-    display: block;
-  }
-  .portfolio__left {
-    max-width: 410px;
-    margin-bottom: 5rem;
-  }
   .portfolio__projectTitle {
     font-size: 30px;
-  }
-  .portfolio__right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .portfolio__img {
-    margin-left: auto;
   }
   .about__description {
     font-size: 20px;
@@ -309,9 +295,6 @@ body {
   .portfolio__title {
     margin-bottom: 5rem;
   }
-  .portfolio__img {
-    width: 100%;
-  }
   .portfolio__projectTitle {
     font-size: 26px;
     margin: 5px 0;
@@ -319,6 +302,9 @@ body {
   .portfolio__projectDescription {
     font-size: 18px;
     line-height: calc(18 * 1.6px);
+  }
+  .portfolio__left, .portfolio__right {
+    grid-column: span 12;
   }
   .contact {
     -ms-grid-columns: (1fr)[2];
